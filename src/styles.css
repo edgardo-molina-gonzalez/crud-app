@@ -1,1 +1,39 @@
-/* You can add global styles to this file, and also import other style files */
+html{
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*, *:before, *:after{
+  box-sizing: inherit;
+}
+
+@media (min-width: 768px){
+  header nav{
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+body {
+  color: white;
+  height: 100%;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  background-image: url(assets/marvel-dc.jpg);
+}
+
+@media (min-width: 768px){
+  body{
+  background-image: url(assets/marvel-dc.jpg);
+  background-repeat:repeat-y;
+  background-size:cover;
+  }
+}
+
+.contenedor{
+  max-width: 120rem;
+  width: 90%;
+  margin: 0 auto;
+}

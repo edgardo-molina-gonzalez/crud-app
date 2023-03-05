@@ -1,0 +1,33 @@
+section{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+}
+
+@media (min-width: 768px){
+  h1{
+    text-align: left;
+  }
+  section{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap:5rem;
+    object-fit: cover;
+  }
+
+  .espacio{
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.flex{
+  display: flex;
+  justify-content: space-between;
+}
