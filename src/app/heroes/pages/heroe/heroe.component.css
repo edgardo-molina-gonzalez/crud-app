@@ -1,4 +1,18 @@
- mat-spinner{
-  color: gold;
-  border-width: 10px;
+img{
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.grid-heroe{
+  display: grid;
+  grid-template-columns: 1fr;
+  column-gap: 10rem;
+}
+
+@media (min-width: 768px){
+  .grid-heroe{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }

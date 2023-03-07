@@ -5,5 +5,30 @@
 </mat-grid-list>
 
 <ng-template #divHeroe>
-  {{ heroe | json }}
+
+  <div class="grid-heroe">
+    <div>
+      <h1> {{ heroe.superhero }} <small> - {{ heroe.alter_ego }} </small> </h1>
+      <mat-divider></mat-divider>
+      <br>
+      <img src="assets/heroes/{{heroe.id}}.jpg" alt="{{ heroe.id }}">
+    </div>
+
+    <div>
+      <h1> {{ heroe.publisher }} </h1>
+      <mat-divider></mat-divider>
+      <br>
+      <mat-list>
+        <mat-list-item> {{ heroe.first_appearance }} </mat-list-item>
+        <mat-list-item> {{ heroe.characters }} </mat-list-item>
+        <mat-list-item> {{ heroe.publisher }} </mat-list-item>
+        <mat-list-item> {{ heroe.alter_ego }} </mat-list-item>
+      </mat-list>
+
+      <br>
+
+      <button (click)="regresar()" mat-button color="warn"> Regresar </button>
+    </div>
+  </div>
+
 </ng-template>
