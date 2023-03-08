@@ -1,0 +1,41 @@
+
+@media (min-width: 768px){
+  .dos-columnas{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 10rem;
+  }
+  .flex-2{
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+button{
+  width: 100%;
+}
+
+mat-form-field{
+  display: block;
+}
+
+/* Utilidad */
+.text-center{
+  text-align: center;
+}
+
+@media (min-width: 768px){
+  .text-center{
+    text-align: left;
+  }
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.contenedor-formulario{
+  margin: 0 0 5rem 0;
+}

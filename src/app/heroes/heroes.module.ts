@@ -9,6 +9,7 @@ import { MaterialModule } from '../material/material.module';
 import { HeroeTarjetaComponent } from './components/heroe-tarjeta/heroe-tarjeta.component';
 import { HeroeComponent } from './pages/heroe/heroe.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ImagenPipe } from './pipes/imagen.pipe';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     ListadoComponent,
     HeroeComponent,
     HeroeTarjetaComponent,
+    ImagenPipe,
   ],
   imports: [
     CommonModule,

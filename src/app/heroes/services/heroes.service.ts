@@ -21,9 +21,18 @@ export class HeroesService {
     return this.http.get<Heroe>(`${this.baseUrl}/heroes/${id}`);
   }
 
+  // usado en buscar
   getSugerencias(termino: string) {
     return this.http.get<Heroe[]>(
       `${this.baseUrl}/heroes?q=${termino}&_limit=5`
     );
+  }
+
+  // usado en agregar
+  agregarHeroe(heroe: Heroe) {
+    return this.http.post<Heroe>(`${this.baseUrl}/heroes`, heroe);
+  }
+  actualizarHeroe(heroe: Heroe) {
+    return this.http.put<Heroe>(`${this.baseUrl}/heroes/${heroe.id}`, heroe);
   }
 }
